@@ -1,0 +1,70 @@
+{
+  "description" : "Collection format for selected bands from the MODIS MxD11A2 (Aqua and Terra) v006 Land Surface Temperature product",
+  "tags" : ["HLS", "LST"],
+  "pattern" : ".*\\.hdf.*",
+  "images" : {
+    "pattern" : "HDF4_EOS:EOS_GRID:\"(.+)\\.hdf.*"
+  },
+  "datetime" : {
+    "pattern" : ".*T[0-9]+[A-Z]+[A-Z]+[A-Z]+.(.{7}).*",
+    "format" : "%Y%j"
+  },
+  "bands" : {
+    "B01" : {
+      "pattern" : ".+B01$",
+      "nodata" : -1000
+    },
+    "B02" : {
+      "pattern" : ".+B02$",
+      "nodata" : -1000
+    },
+    "B03" : {
+      "pattern" : ".+B03$",
+      "nodata" : -1000
+    },
+    "B04" : {
+      "pattern" : ".+B04$",
+      "nodata" : -1000
+    },
+    "B05" : {
+      "pattern" : ".+B05$",
+      "nodata" : -1000
+    },
+    "B06" : {
+      "pattern" : ".+B06$",
+      "nodata" : -1000
+    },
+    "B07" : {
+      "pattern" : ".+B07$",
+      "nodata" : -1000
+    },
+    "B08" : {
+      "pattern" : ".+B08$",
+      "nodata" : -1000
+    },
+    "B8A" : {
+      "pattern" : ".+B8A$",
+      "nodata" : -1000
+    },
+    "B09" : {
+      "pattern" : ".+B09$",
+      "nodata" : -1000
+    },
+     "B10" : {
+      "pattern" : ".+B10$",
+      "nodata" : -1000
+    },
+     "B11" : {
+      "pattern" : ".+B11$",
+      "nodata" : -1000
+    },
+     "B12" : {
+      "pattern" : ".+B12$",
+      "nodata" : -10000
+    },
+    "QA" : {
+      "pattern" : ".+QA$",
+      "nodata" : 255
+    }
+  }
+}

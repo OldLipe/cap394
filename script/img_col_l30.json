@@ -1,0 +1,58 @@
+{
+  "description" : "Collection format for selected bands from the MODIS MxD11A2 (Aqua and Terra) v006 Land Surface Temperature product",
+  "tags" : ["HLS", "LST"],
+  "pattern" : ".*\\.hdf.*",
+  "images" : {
+    "pattern" : "HDF4_EOS:EOS_GRID:\"(.+)\\.hdf.*"
+  },
+  "datetime" : {
+    "pattern" : ".*T[0-9]+[A-Z]+[A-Z]+[A-Z]+.(.{7}).*",
+    "format" : "%Y%j"
+  },
+  "bands" : {
+    "band01" : {
+      "pattern" : ".+band01$",
+      "nodata" : 0
+    },
+    "band02" : {
+      "pattern" : ".+band02$",
+      "nodata" : 0
+    },
+    "band03" : {
+      "pattern" : ".+band03$",
+      "nodata" : 0
+    },
+    "band04" : {
+      "pattern" : ".+band04$",
+      "nodata" : 0
+    },
+    "band05" : {
+      "pattern" : ".+band05$",
+      "nodata" : 0
+    },
+    "band06" : {
+      "pattern" : ".+band06$",
+      "nodata" : 0
+    },
+    "band07" : {
+      "pattern" : ".+band07$",
+      "nodata" : 0
+    },
+    "band09" : {
+      "pattern" : ".+band09$",
+      "nodata" : 0
+    },
+    "band10" : {
+      "pattern" : ".+band10$",
+      "nodata" : 0
+    },
+    "band11" : {
+      "pattern" : ".+band11$",
+      "nodata" : 0
+    },
+    "QA" : {
+      "pattern" : ".+QA$",
+      "nodata" : 255
+    }
+  }
+}
