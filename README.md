@@ -3,4 +3,4 @@
 Aluno:
 - Felipe Carvalho 
 
-[Visualização](https://nbviewer.jupyter.org/github/OldLipe/cap394/blob/master/ets_eda.ipynb)
+[Visualização do notebool pelo nbviewer](https://nbviewer.jupyter.org/github/OldLipe/cap394/blob/master/ets_eda.ipynb)
